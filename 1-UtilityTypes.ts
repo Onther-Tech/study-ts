@@ -24,15 +24,15 @@
     author: string;
     description: string;
   };
-  //   type VideoOptional = {
-  //     title?: string;
-  //     author?: string;
-  //     description?: string;
-  //   };
-  //   type VideoReadONly = {
-  //     readonly title: string;
-  //     readonly author: string;
-  //   };
+  // type VideoOptional = {
+  //   title?: string;
+  //   author?: string;
+  //   description?: string;
+  // };
+  // type VideoReadONly = {
+  //   readonly title: string;
+  //   readonly author: string;
+  // };
 
   type Optional<T> = {
     [P in keyof T]?: T[P]; // for ... in
