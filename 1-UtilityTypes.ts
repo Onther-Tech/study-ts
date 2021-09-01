@@ -10,7 +10,7 @@
   };
 
   type NewName = Animal["name"]; // string
-  const text: Name = "string";
+  const text: NewName = "string";
 
   type Gender = Animal["gender"]; // 'male' | 'female'
   type Keys = keyof Animal; // 'name' | 'age' | 'gender'
@@ -84,7 +84,7 @@
     label: string;
     priority: string;
   };
-  //   function lookTS(todo: Readonly<ToDo>) {}
+  function lookTS(todo: Readonly<ToDo>) {}
   function updateTodo(todo: ToDo, filedsToUpdate: Partial<ToDo>): ToDo {
     return { ...todo, ...filedsToUpdate };
   }
