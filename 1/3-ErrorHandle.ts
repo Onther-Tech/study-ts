@@ -34,12 +34,6 @@ class UserService {
 class App {
   constructor(private userService: UserService) {}
   run() {
-    try {
-      this.userService.login();
-    } catch (err) {
-      if (err instanceof OfflineError) {
-        //err type is any..
-      }
-    }
+    this.userService.login();
   }
 }
